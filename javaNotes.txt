@@ -1,0 +1,6 @@
+access modifier
+file name == class name
+CamelCase
+main method must in public
+
+3.6.6
