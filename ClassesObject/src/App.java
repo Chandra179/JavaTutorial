@@ -3,6 +3,7 @@ public class App {
 		// fill the staff array with three Employee objects
 		Employee[] staff = new Employee[3];
 		Employee staffs = new Employee("Carl bommer", 75000, 1987, 12, 15);
+		Employee staffss = new Employee("Carl bommer", 75000, 1987, 12, 15);
 
 		staff[0] = new Employee("Carl Cracker", 75000, 1987, 12, 15);
 		staff[1] = new Employee("Harry Hacker", 50000, 1989, 10, 1);
@@ -13,7 +14,8 @@ public class App {
 			e.raiseSalary(5);
 
 		// print out information about all Employee objects
-		System.out.println(staffs.getName());
+		System.out.println(staffs);
+		System.out.println(staffss);
 		for (Employee e : staff)
 			System.out.println("name=" + e.getName() + ",salary=" + e.getSalary() + ",hireDay=" + e.getHireDay());
 	}
