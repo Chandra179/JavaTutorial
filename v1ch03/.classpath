@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="BigIntegerTest"/>
+	<classpathentry kind="src" path="CompoundInterest"/>
+	<classpathentry kind="src" path="FirstSample"/>
+	<classpathentry kind="src" path="InputTest"/>
+	<classpathentry kind="src" path="LotteryArray"/>
+	<classpathentry kind="src" path="LotteryDrawing"/>
+	<classpathentry kind="src" path="LotteryOdds"/>
+	<classpathentry kind="src" path="Retirement"/>
+	<classpathentry kind="src" path="Retirement2"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
