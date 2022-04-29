@@ -1,57 +1,13 @@
-file name == class name
-CamelCase
-main method must in public
+The program in Listing 4.5 shows many of the features discussed in this section:
 
-Methods that only access objects without modifying them are sometimes called accessor methods.
+• Overloaded constructors
 
+• A call to another constructor with this(. . .)
 
-Employee(double number) <- first parameter called implicit parameter (double)
-                        <- second parameter called explicit parameter (number)
+• A no-argument constructor
 
+• An object initialization block
 
-Sometimes called filled accessor, as they return the values of instance fields
+• A static initialization block
 
-
-accessor and mutator methods may need a lot of work to conver between the old and new data representation
-That leads us to our second benefit: Mutator methods can perform error checking, whereas code that
-simply assigns to field may not go into the trouble. For example, a setSalary method might check that the
-salary is never less than 0.
-
-
-Be careful not to write accessor methods that return references to mutable objects
-
-
-As a rule of thumb, always use clone whenever you need to return a copy of a mutable field.
-
-
-For example, the name field of the Employee class may be declared as final because 
-it never changes after the object is constructed—there is no setName method.
-
-
-If you define a field as static, then the field is not present in the objects of the class. 
-There is only a single copy of each static field.
-
-
-The static keyword in Java is mainly used for memory management. 
-The static keyword in Java is used to share the same variable or method of a given class. 
-
-
-static methods vs factory methods
-
-
-There are, however, two kinds of method parameters:
-  • Primitive types (numbers, boolean values)
-  • Object references
-
-
-You have seen that it is impossible for a method to change a primitive type parameter. 
-The situation is different for object parameters. 
-You can easily implement a method that triples the salary of an employee:
-
-  public static void tripleSalary(Employee x) // works
-  {
-     x.raiseSalary(200);
-  }
-
-
-
+• An instance field initialization
