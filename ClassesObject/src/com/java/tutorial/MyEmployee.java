@@ -1,11 +1,13 @@
+package com.java.tutorial;
+
 import java.time.LocalDate;
 
-class Employee {
+class MyEmployee {
 	private String name;
 	private double salary;
 	private LocalDate hireDay;
 
-	public Employee(String n, double s, int year, int month, int day) {
+	public MyEmployee(String n, double s, int year, int month, int day) {
 		name = n;
 		salary = s;
 		hireDay = LocalDate.of(year, month, day);

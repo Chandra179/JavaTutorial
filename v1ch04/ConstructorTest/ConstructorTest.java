@@ -1,84 +1,75 @@
-import java.util.*;
+import java.util.Random;
 
 /**
  * This program demonstrates object construction.
+ * 
  * @version 1.02 2018-04-10
  * @author Cay Horstmann
  */
-public class ConstructorTest
-{
-   public static void main(String[] args)
-   {
-      // fill the staff array with three Employee objects
-      var staff = new Employee[3];
+public class ConstructorTest {
+	public static void main(String[] args) {
+		// fill the staff array with three Employee objects
+		var staff = new Employee[4];
 
-      staff[0] = new Employee("Harry", 40000);
-      staff[1] = new Employee(60000);
-      staff[2] = new Employee();
+		staff[0] = new Employee("sans", 40000);
+		staff[1] = new Employee("jackob", 40000);
+		staff[2] = new Employee(60000);
+		staff[3] = new Employee();
 
-      // print out information about all Employee objects
-      for (Employee e : staff)
-         System.out.println("name=" + e.getName() + ",id=" + e.getId() + ",salary="
-            + e.getSalary());
-   }
+		// print out information about all Employee objects
+		for (Employee e : staff)
+			System.out.println("name=" + e.getName() + ",id=" + e.getId() + ",salary=" + e.getSalary());
+	}
 }
 
-class Employee
-{
-   private static int nextId;
+class Employee {
+	private static int nextId;
 
-   private int id;
-   private String name = ""; // instance field initialization
-   private double salary;
+	private int id;
+	private String name = ""; // instance field initialization
+	private double salary;
 
-   private static Random generator = new Random();
-   
-   // static initialization block
-   static
-   {
-      // set nextId to a random number between 0 and 9999
-      nextId = generator.nextInt(10000);
-   }
+	private static Random generator = new Random();
 
-   // object initialization block
-   {
-      id = nextId;
-      nextId++;
-   }
+	// static initialization block
+	static {
+		// set nextId to a random number between 0 and 9999
+		nextId = generator.nextInt(10000);
+	}
 
-   // three overloaded constructors
-   public Employee(String n, double s)
-   {
-      name = n;
-      salary = s;
-   }
+	// object initialization block
+	{
+		id = nextId;
+		nextId++;
+	}
 
-   public Employee(double s)
-   {
-      // calls the Employee(String, double) constructor
-      this("Employee #" + nextId, s);
-   }
+	// three overloaded constructors
+	public Employee(String n, double s) {
+		name = n;
+		salary = s;
+	}
 
-   // the default constructor
-   public Employee()
-   {
-      // name initialized to ""--see above
-      // salary not explicitly set--initialized to 0
-      // id initialized in initialization block
-   }
+	public Employee(double s) {
+		// calls the Employee(String, double) constructor
+		this("Employee #" + nextId, s);
+	}
 
-   public String getName()
-   {
-      return name;
-   }
+	// the default constructor
+	public Employee() {
+		// name initialized to ""--see above
+		// salary not explicitly set--initialized to 0
+		// id initialized in initialization block
+	}
 
-   public double getSalary()
-   {
-      return salary;
-   }
+	public String getName() {
+		return name;
+	}
 
-   public int getId()
-   {
-      return id;
-   }
+	public double getSalary() {
+		return salary;
+	}
+
+	public int getId() {
+		return id;
+	}
 }
