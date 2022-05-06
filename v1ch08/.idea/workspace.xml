@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cadf1df8-a828-44e8-88b8-bcdb5f77f9d4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/genericAlgorithms/GenericAlgorithms.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genericAlgorithms/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genericReflection/GenericReflectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genericReflection/TypeLiterals.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/limitations/DefeatCheckedExceptionChecking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/limitations/NoGenericArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair1/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair1/PairTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair2/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair2/PairTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/PairTest3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../~$va_Generics.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../~WRL0045.tmp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="28kQqsXBwyEm6EIucYY0ZX4bkBB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/JavaTutorial/v1ch08/genericAlgorithms"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cadf1df8-a828-44e8-88b8-bcdb5f77f9d4" name="Changes" comment="" />
+      <created>1651758300542</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651758300542</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
