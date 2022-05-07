@@ -2,6 +2,8 @@ package com.example.demo.student;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -18,5 +20,10 @@ public class StudentService {
     }
     public List<Student> getStudents(){
         return studentRepository.findAll();
+    }
+
+    @PostMapping
+    public void addNewStudent(Student student) {
+        System.out.println(student);
     }
 }
