@@ -29,7 +29,7 @@ public class CircularArrayQueueTest
 */ 
 class CircularArrayQueue<E> extends AbstractQueue<E>
 { 
-   private Object[] elements; 
+   private Object[] elements;
    private int head; 
    private int tail; 
    private int count; 

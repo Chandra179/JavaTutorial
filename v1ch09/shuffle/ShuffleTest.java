@@ -17,6 +17,10 @@ public class ShuffleTest
       Collections.shuffle(numbers);
       List<Integer> winningCombination = numbers.subList(0, 6);
       Collections.sort(winningCombination);
+
+      List<Integer> tes = new ArrayList<Integer>(winningCombination);
+      tes.add(100);
+      System.out.println(tes);
       System.out.println(winningCombination);
    }
 }

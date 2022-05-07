@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="20d6b7d4-0335-47b6-a0ed-97050cf6db71" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Java_Collections.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../~$va_Collections.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/PairTest3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/out/production/pair3/pair3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/out/production/pair3/pair3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/out/production/pair3/pair3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/out/production/pair3/pair3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/out/production/pair3/pair3/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/out/production/pair3/pair3/Manager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/out/production/pair3/pair3/Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/out/production/pair3/pair3/PairAlg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/out/production/pair3/pair3/PairTest3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pair3/out/production/pair3/pair3/pair3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/JavaTutorial.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28mqWo7DOU1nUSgHJLrR0jiTwpL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/JavaTutorial/v1ch08"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20d6b7d4-0335-47b6-a0ed-97050cf6db71" name="Changes" comment="" />
+      <created>1651832142361</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651832142361</updated>
+    </task>
+    <servers />
+  </component>
+</project>

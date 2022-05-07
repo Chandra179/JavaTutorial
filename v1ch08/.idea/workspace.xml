@@ -2,22 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cadf1df8-a828-44e8-88b8-bcdb5f77f9d4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/genericAlgorithms/GenericAlgorithms.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/genericAlgorithms/Pair.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/genericReflection/GenericReflectionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/genericReflection/TypeLiterals.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/limitations/DefeatCheckedExceptionChecking.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/limitations/NoGenericArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair1/Pair.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair1/PairTest1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair2/Pair.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair2/PairTest2.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CRUD/src/Dbconn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CRUD/src/DeleteStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CRUD/src/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CRUD/src/InsertStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CRUD/src/SelectStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CRUD/src/UpdateStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaDatabaseExample/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaDatabaseExample/InsertStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaDatabaseExample/JdbcPostgresqlConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaDatabaseExample/SelectStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaDatabaseExample/updateStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_Collections.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../v1ch09/PracticeCollections/Practice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pair3/Employee.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pair3/Manager.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pair3/Pair.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pair3/PairTest3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../~$va_Generics.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../~WRL0045.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/Manager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/PairAlg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/PairTest3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/pair3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/JavaTutorial.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v1ch09/circularArrayQueue/CircularArrayQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../v1ch09/circularArrayQueue/CircularArrayQueueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v1ch09/shuffle/ShuffleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../v1ch09/shuffle/ShuffleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,19 +45,37 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="28kQqsXBwyEm6EIucYY0ZX4bkBB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/JavaTutorial/v1ch08/genericAlgorithms"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaTutorial/v1ch08&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="v1ch08" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="v1ch08" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

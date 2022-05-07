@@ -21,6 +21,7 @@ public class PairTest3
       minmaxBonus(managers, result);
       System.out.println("first: " + result.getFirst().getName() 
          + ", second: " + result.getSecond().getName());
+
       maxminBonus(managers, result);
       System.out.println("first: " + result.getFirst().getName() 
          + ", second: " + result.getSecond().getName());
@@ -66,6 +67,7 @@ class PairAlg
 
    public static <T> void swapHelper(Pair<T> p)
    {
+      System.out.println(p);
       T t = p.getFirst();
       p.setFirst(p.getSecond());
       p.setSecond(t);
