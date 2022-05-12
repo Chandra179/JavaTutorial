@@ -2,40 +2,179 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cadf1df8-a828-44e8-88b8-bcdb5f77f9d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../CRUD/src/Dbconn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CRUD/src/DeleteStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CRUD/src/Example.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CRUD/src/InsertStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CRUD/src/SelectStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CRUD/src/UpdateStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaDatabaseExample/Example.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaDatabaseExample/InsertStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaDatabaseExample/JdbcPostgresqlConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaDatabaseExample/SelectStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaDatabaseExample/updateStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_Collections.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../v1ch09/PracticeCollections/Practice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RestSpringBootTutorial/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RestSpringBootTutorial/.idea/RestSpringBootTutorial.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RestSpringBootTutorial/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RestSpringBootTutorial/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RestSpringBootTutorial/demo/src/main/java/com/example/demo/greeting/Greeting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RestSpringBootTutorial/demo/src/main/java/com/example/demo/greeting/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../v1ch04/v1ch04.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankAccount/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankAccount/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankAccount/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankAccount/src/com/bank/account/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankAccount/src/com/bank/account/AccountDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankAccount/src/com/bank/account/CheckingAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankAccount/src/com/bank/account/SavingsAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRUD/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRUD/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRUD/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRUD/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRUD/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRUD/CRUD.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRUD/src/Dbconn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRUD/src/DeleteStatement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRUD/src/Example.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRUD/src/InsertStatement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRUD/src/SelectStatement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRUD/src/UpdateStatement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassesObject/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassesObject/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassesObject/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassesObject/src/com/java/tutorial/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassesObject/src/com/java/tutorial/MyEmployee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTypes_ControlFlow_Operator.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exception_Assertion_Loggings_Debugging.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Inheritance.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interface_lambda_innerClass.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/ATM-Machine-master.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/ATM-Machine-master/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/ATM-Machine-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/ATM-Machine-master/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/ATM-Machine-master/ATM/ATM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/ATM-Machine-master/ATM/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/ATM-Machine-master/ATM/OptionMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/ATM-Machine-master/Jenkinsfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/ATM-Machine-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/Billing System.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/jgoodies-forms-1.8.0-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/jgoodies-forms-1.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/src/AdminPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/src/DB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/src/Invoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/src/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/src/Sale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/src/addCashier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/src/addProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/src/deleteCashier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/src/deleteProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/src/generateInvoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/src/pdfGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/src/searchCashier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/src/searchProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/src/showStock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/src/updateProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/META-INF/services/serviceLoader.Cipher" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/anonymousInnerClass/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/anonymousInnerClass/AnonymousInnerClassTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/clone/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/clone/CloneTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/clone/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/innerClass/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/innerClass/InnerClassTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/interfaces/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/interfaces/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/interfaces/EmployeeSortTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/lambda/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/lambda/LambdaTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/localInnerClass/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/localInnerClass/LocalInnerClassTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/proxy/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/proxy/ProxyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/serviceLoader/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/serviceLoader/Cipher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/serviceLoader/ServiceLoaderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/serviceLoader/impl/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/serviceLoader/impl/CaesarCipher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/staticInnerClass/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/staticInnerClass/StaticInnerClassTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/timer/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Billing-System-master/v1ch06/timer/TimerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/Hotel-Management-Project-Java-master.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/.idea/libraries/javafx_web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/.idea/libraries/mysql_connector_java_8_0_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/PatientManagment.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/libraries/mysql-connector-java-8.0.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/Launcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/controller/AddPatientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/controller/AllDataController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/controller/BaseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/controller/DeletePatientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/controller/LoginPageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/controller/ModifyPatientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/controller/OptionsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/model/DataBaseConnecction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/model/Patient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/ColorTheme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/FontSize.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/ViewFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/css/Application.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/css/fontBig.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/css/fontMedium.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/css/fontSmall.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/css/themeDark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/css/themeDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/css/themeLight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/fxml/AddPatientWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/fxml/DeletePatientWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/fxml/HomePage.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/fxml/LoginWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/fxml/ModifyPatient.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/fxml/OptionWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/fxml/ShowData.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/images/DoctorImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/images/Screenshot_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/images/Screenshot_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/com/nidhal/view/images/Screenshot_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/src/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/test/com/nidhal/controller/LoginPageControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/PatientManagment-master/test/com/nidhal/model/DataBaseConnecctionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/corejava.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/currency-checker-main.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaProject/public-tax-management-master.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Collections.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Generics.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Object&amp;classes.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootTutorial/demo.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootTutorial/demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootTutorial/demo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootTutorial/demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootTutorial/demo/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootTutorial/demo/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootTutorial/demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootTutorial/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootTutorial/demo/src/main/java/com/example/demo/student/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootTutorial/demo/src/main/java/com/example/demo/student/StudentConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootTutorial/demo/src/main/java/com/example/demo/student/StudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootTutorial/demo/src/main/java/com/example/demo/student/StudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootTutorial/demo/src/main/java/com/example/demo/student/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootTutorial/demo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootTutorial/demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/Manager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/Pair.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/PairTest3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/PairAlg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/PairTest3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/pair3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/JavaTutorial.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../v1ch09/circularArrayQueue/CircularArrayQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../v1ch09/circularArrayQueue/CircularArrayQueueTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../v1ch09/shuffle/ShuffleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../v1ch09/shuffle/ShuffleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/PairTest3.java" beforeDir="false" afterPath="$PROJECT_DIR$/pair3/PairTest3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/PairAlg.class" beforeDir="false" afterPath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/PairAlg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/PairTest3.class" beforeDir="false" afterPath="$PROJECT_DIR$/pair3/out/production/pair3/pair3/PairTest3.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,21 +200,6 @@
     &quot;last_opened_file_path&quot;: &quot;D:/JavaTutorial/v1ch08&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="v1ch08" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="v1ch08" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

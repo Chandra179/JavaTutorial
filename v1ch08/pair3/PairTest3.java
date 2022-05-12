@@ -1,5 +1,7 @@
 package pair3;
 
+import java.util.Scanner;
+
 /**
  * @version 1.01 2012-01-26
  * @author Cay Horstmann
