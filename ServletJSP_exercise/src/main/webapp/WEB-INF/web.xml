@@ -10,6 +10,8 @@
 		<url-pattern>/add</url-pattern>
 	</servlet-mapping>
 	
+	
+	
 	<servlet>
 		<servlet-name>Callme</servlet-name>
 		<servlet-class>com.practice.CallMe</servlet-class>
@@ -18,4 +20,24 @@
 		<servlet-name>Callme</servlet-name>
 		<url-pattern>/callme</url-pattern>
 	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>ServletConfigContext</servlet-name>
+		<servlet-class>com.practice.ServletConfigContext</servlet-class>
+		<init-param>
+			<param-name>name</param-name>
+			<param-value>Sasuke</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletConfigContext</servlet-name>
+		<url-pattern>/servletconfigcontext</url-pattern>
+	</servlet-mapping>
+	<context-param>
+		<param-name>name</param-name>
+		<param-value>Xiaomi</param-value>
+	</context-param>
+	
 </web-app>
