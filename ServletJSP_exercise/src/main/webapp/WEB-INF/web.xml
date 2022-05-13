@@ -3,7 +3,7 @@
 	
 	<servlet>
 		<servlet-name>Addnumber</servlet-name>
-		<servlet-class>com.req_dispatcher.AddNumber</servlet-class>
+		<servlet-class>com.practice.AddNumber</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Addnumber</servlet-name>
@@ -12,7 +12,7 @@
 	
 	<servlet>
 		<servlet-name>Callme</servlet-name>
-		<servlet-class>com.req_dispatcher.CallMe</servlet-class>
+		<servlet-class>com.practice.CallMe</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Callme</servlet-name>
