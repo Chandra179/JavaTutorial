@@ -1,0 +1,16 @@
+Entities -> representasi data
+use case -> business logic
+controller -> interface
+
+interface
+service -> busines logic
+repository -> manipulasi database
+entity -> representasi data
+
+TODOLIST
+
+1. View
+   - list todo, tambah, delete, exit
+2. Service
+   - tambah action, delete action, exit action
+3. 
