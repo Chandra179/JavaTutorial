@@ -12,5 +12,6 @@ TODOLIST
 1. View
    - list todo, tambah, delete, exit
 2. Service
-   - tambah action, delete action, exit action
-3. 
+   - tambah, delete, show
+3. Repository
+   - tambah, delete, show
