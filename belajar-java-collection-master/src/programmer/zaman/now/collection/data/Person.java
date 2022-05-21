@@ -6,24 +6,24 @@ import java.util.List;
 
 public class Person {
 
-  private String name;
+	private String name;
 
-  private List<String> hobbies;
+	private List<String> hobbies;
 
-  public Person(String name) {
-    this.name = name;
-    this.hobbies = new ArrayList<>();
-  }
+	public Person(String name) {
+		this.name = name;
+		this.hobbies = new ArrayList<>();
+	}
 
-  public void addHobby(String hobby){
-    hobbies.add(hobby);
-  }
+	public void addHobby(String hobby) {
+		hobbies.add(hobby);
+	}
 
-  public List<String> getHobbies(){
-    return Collections.unmodifiableList(hobbies);
-  }
+	public List<String> getHobbies() {
+		return Collections.unmodifiableList(hobbies);
+	}
 
-  public String getName() {
-    return name;
-  }
+	public String getName() {
+		return name;
+	}
 }
