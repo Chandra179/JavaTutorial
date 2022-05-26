@@ -5,24 +5,28 @@ import com.zaxxer.hikari.HikariDataSource;
 
 public class ConnectionUtil {
 
-  private static HikariDataSource dataSource;
+	private static HikariDataSource dataSource;
 
-  static {
-    HikariConfig config = new HikariConfig();
-    config.setDriverClassName("com.mysql.cj.jdbc.Driver");
-    config.setJdbcUrl("jdbc:mysql://localhost:3306/belajar_java_database?serverTimezone=Asia/Jakarta");
-    config.setUsername("root");
-    config.setPassword("");
+	static {
+		HikariConfig config = new HikariConfig();
+		// config.setDriverClassName("com.mysql.cj.jdbc.Driver");
+		// config.setJdbcUrl("jdbc:mysql://localhost:3306/belajar_java_database?serverTimezone=Asia/Jakarta");
 
-    config.setMaximumPoolSize(10);
-    config.setMinimumIdle(5);
-    config.setIdleTimeout(60_000);
-    config.setMaxLifetime(10 * 60_000);
+		config.setDataSourceClassName("org.postgresql.ds.PGSimpleDataSource");
+		config.addDataSourceProperty("portNumber", "5432");
+		config.addDataSourceProperty("databaseName", "school");
+		config.addDataSourceProperty("user", "alexa");
+		config.addDataSourceProperty("password", "admin");
 
-    dataSource = new HikariDataSource(config);
-  }
+		config.setMaximumPoolSize(10);
+		config.setMinimumIdle(5);
+		config.setIdleTimeout(60_000);
+		config.setMaxLifetime(10 * 60_000);
 
-  public static HikariDataSource getDataSource() {
-    return dataSource;
-  }
+		dataSource = new HikariDataSource(config);
+	}
+
+	public static HikariDataSource getDataSource() {
+		return dataSource;
+	}
 }
