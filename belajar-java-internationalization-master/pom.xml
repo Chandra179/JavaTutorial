@@ -5,17 +5,17 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>programmer-zaman-now</groupId>
-  <artifactId>studi-kasus-java-database-aplikasi-todolist</artifactId>
+  <artifactId>belajar-java-i18n</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>studi-kasus-java-database-aplikasi-todolist</name>
+  <name>belajar-java-i18n</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>15</maven.compiler.source>
+    <maven.compiler.target>15</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -24,16 +24,6 @@
       <artifactId>junit-jupiter</artifactId>
       <version>5.7.1</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-	  <groupId>org.postgresql</groupId>
-	  <artifactId>postgresql</artifactId>
-	  <version>42.3.6</version>
-	</dependency>
-    <dependency>
-      <groupId>com.zaxxer</groupId>
-      <artifactId>HikariCP</artifactId>
-      <version>5.0.1</version>
     </dependency>
   </dependencies>
 

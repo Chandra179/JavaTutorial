@@ -5,26 +5,27 @@ import com.zaxxer.hikari.HikariDataSource;
 
 public class DatabaseUtil {
 
-  private static HikariDataSource hikariDataSource;
+	private static HikariDataSource hikariDataSource;
 
-  static {
-    HikariConfig configuration = new HikariConfig();
-    configuration.setDriverClassName("com.mysql.cj.jdbc.Driver");
-    configuration.setUsername("root");
-    configuration.setPassword("");
-    configuration.setJdbcUrl("jdbc:mysql://localhost:3306/belajar_java_todolist?serverTimezone=Asia/Jakarta");
+	static {
+		HikariConfig config = new HikariConfig();
+		config.setDataSourceClassName("org.postgresql.ds.PGSimpleDataSource");
+		config.addDataSourceProperty("portNumber", "5432");
+		config.addDataSourceProperty("databaseName", "school");
+		config.addDataSourceProperty("user", "alexa");
+		config.addDataSourceProperty("password", "admin");
 
-    // pool
-    configuration.setMaximumPoolSize(10);
-    configuration.setMinimumIdle(5);
-    configuration.setIdleTimeout(60_000);
-    configuration.setMaxLifetime(60 * 60 * 1000);
+		// pool
+		config.setMaximumPoolSize(10);
+		config.setMinimumIdle(5);
+		config.setIdleTimeout(60_000);
+		config.setMaxLifetime(60 * 60 * 1000);
 
-    hikariDataSource = new HikariDataSource(configuration);
-  }
+		hikariDataSource = new HikariDataSource(config);
+	}
 
-  public static HikariDataSource getDataSource(){
-    return hikariDataSource;
-  }
+	public static HikariDataSource getDataSource() {
+		return hikariDataSource;
+	}
 
 }
