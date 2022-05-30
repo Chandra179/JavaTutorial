@@ -1,5 +1,8 @@
 package com.iteratrlearning.shu_book.chapter_04;
 
+import static com.iteratrlearning.shu_book.chapter_04.Attributes.PATH;
+import static java.util.stream.Collectors.toList;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -8,57 +11,51 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Predicate;
 
-import static com.iteratrlearning.shu_book.chapter_04.Attributes.PATH;
-import static java.util.stream.Collectors.toList;
-
 // tag::classDefinition[]
 class TextFile {
-    private final Map<String, String> attributes;
-    private final List<String> lines;
+	private final Map<String, String> attributes;
+	private final List<String> lines;
 
-    // class continues ...
+	// class continues ...
 // end::classDefinition[]
 
-    TextFile(final File file) throws IOException {
-        attributes = new HashMap<>();
-        attributes.put(PATH, file.getPath());
-        lines = Files.lines(file.toPath()).collect(toList());
-    }
+	TextFile(final File file) throws IOException {
+		attributes = new HashMap<>();
+		attributes.put(PATH, file.getPath());
+		lines = Files.lines(file.toPath()).collect(toList()); // convert files data to List
+	}
 
-    Map<String, String> getAttributes() {
-        return attributes;
-    }
+	Map<String, String> getAttributes() {
+		return attributes;
+	}
 
-    // tag::addLines[]
-    int addLines(
-        final int start,
-        final Predicate<String> isEnd,
-        final String attributeName) {
+	// tag::addLines[]
+	int addLines(final int start, final Predicate<String> isEnd, final String attributeName) {
 
-        final StringBuilder accumulator = new StringBuilder();
-        int lineNumber;
-        for (lineNumber = start; lineNumber < lines.size(); lineNumber++) {
-            final String line = lines.get(lineNumber);
-            if (isEnd.test(line)) {
-                break;
-            }
+		final StringBuilder accumulator = new StringBuilder();
+		int lineNumber;
+		for (lineNumber = start; lineNumber < lines.size(); lineNumber++) {
+			final String line = lines.get(lineNumber);
+			if (isEnd.test(line)) {
+				break;
+			}
 
-            accumulator.append(line);
-            accumulator.append("\n");
-        }
-        attributes.put(attributeName, accumulator.toString().trim());
-        return lineNumber;
-    }
-    // end::addLines[]
+			accumulator.append(line);
+			accumulator.append("\n");
+		}
+		attributes.put(attributeName, accumulator.toString().trim());
+		return lineNumber;
+	}
+	// end::addLines[]
 
-    // tag::addLineSuffix[]
-    void addLineSuffix(final String prefix, final String attributeName) {
-        for(final String line: lines) {
-            if (line.startsWith(prefix)) {
-                attributes.put(attributeName, line.substring(prefix.length()));
-                break;
-            }
-        }
-    }
-    // end::addLineSuffix[]
+	// tag::addLineSuffix[]
+	void addLineSuffix(final String prefix, final String attributeName) {
+		for (final String line : lines) {
+			if (line.startsWith(prefix)) {
+				attributes.put(attributeName, line.substring(prefix.length()));
+				break;
+			}
+		}
+	}
+	// end::addLineSuffix[]
 }
