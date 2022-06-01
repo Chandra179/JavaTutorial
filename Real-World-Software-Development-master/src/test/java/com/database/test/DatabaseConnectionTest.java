@@ -20,6 +20,7 @@ public class DatabaseConnectionTest {
 		conn.add("3", "asd", "content3");
 		conn.add("4", "asd", "content4");
 		conn.add("5", "asd", "content5");
+		System.out.println(conn.get("1").get());
 		assertTrue(conn.get("1").isPresent());
 	}
 	
