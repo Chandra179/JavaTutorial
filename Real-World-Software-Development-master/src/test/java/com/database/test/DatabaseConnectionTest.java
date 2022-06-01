@@ -1,15 +1,14 @@
 package com.database.test;
 
-import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.assertTrue;
 
 import java.sql.SQLException;
 
 import org.junit.jupiter.api.Test;
 
-import com.iteratrlearning.shu_book.chapter_06.Position;
 import com.iteratrlearning.shu_book.chapter_06.Twoot;
-import com.iteratrlearning.shu_book.chapter_06.database.*;
+import com.iteratrlearning.shu_book.chapter_06.database.DatabaseTwootRepository;
 
 public class DatabaseConnectionTest {
 
@@ -22,6 +21,12 @@ public class DatabaseConnectionTest {
 		conn.add("5", "asd", "content5");
 		System.out.println(conn.get("1").get());
 		assertTrue(conn.get("1").isPresent());
+	}
+	
+	@Test
+	void addDuplicateDataShouldFailed() {
+		DatabaseTwootRepository conn = new DatabaseTwootRepository();
+		assertThrows(IllegalStateException.class,()-> conn.add("1", "asd", "content1"));
 	}
 	
 	@Test
