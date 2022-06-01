@@ -27,8 +27,8 @@ public class InMemoryUserRepository implements UserRepository {
     }
 
     @Override
-    public FollowStatus follow(final User follower, final User userToFollow) {
-        return userToFollow.addFollower(follower);
+    public FollowStatus follow(final User follower, final User currentUser) {
+        return currentUser.addFollower(follower);
     }
 
     @Override

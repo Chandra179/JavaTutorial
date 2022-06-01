@@ -61,6 +61,17 @@ public class DatabaseTwootRepository implements TwootRepository {
     }
 
     @Override
+    public ResultSet getAllTwoot() {
+    	return statementRunner.extract(
+            "SELECT * FROM twoots",
+            stmt ->
+            {
+                var resultSet = stmt.executeQuery();
+                return resultSet;
+            });
+    }
+    
+    @Override
     public Optional<Twoot> get(final String id) {
         return statementRunner.extract(
             "SELECT * FROM twoots WHERE id = ?",
