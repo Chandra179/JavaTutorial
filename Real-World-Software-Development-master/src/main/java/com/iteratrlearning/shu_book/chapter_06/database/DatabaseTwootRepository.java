@@ -94,6 +94,17 @@ public class DatabaseTwootRepository implements TwootRepository {
                 stmt.executeUpdate();
             });
     }
+    
+    @Override
+    public void update(final String id, final String content) {
+        statementRunner.withStatement(
+            "UPDATE twoots SET content = ? WHERE id = ?",
+            stmt -> {
+                stmt.setString(2, id);
+                stmt.setString(1, content);
+                stmt.executeUpdate();
+            });
+    }
 
     // tag::usersTupleLoop[]
     private String usersTupleLoop(final Set<String> following) {

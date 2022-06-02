@@ -1,10 +1,12 @@
 package com.database.test;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.assertTrue;
 
 import java.sql.SQLException;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import com.iteratrlearning.shu_book.chapter_06.Twoot;
@@ -13,19 +15,17 @@ import com.iteratrlearning.shu_book.chapter_06.database.DatabaseTwootRepository;
 public class DatabaseConnectionTest {
 
 	@Test
+	@Disabled
 	void successAddToDatabase() {
 		DatabaseTwootRepository conn = new DatabaseTwootRepository();
 		conn.add("1", "asd", "content1");
-		conn.add("3", "asd", "content3");
-		conn.add("4", "asd", "content4");
-		conn.add("5", "asd", "content5");
-		System.out.println(conn.get("1").get());
 		assertTrue(conn.get("1").isPresent());
 	}
 	
 	@Test
 	void addDuplicateDataShouldFailed() {
 		DatabaseTwootRepository conn = new DatabaseTwootRepository();
+		conn.add("1", "asd", "content1");
 		assertThrows(IllegalStateException.class,()-> conn.add("1", "asd", "content1"));
 	}
 	
@@ -41,6 +41,15 @@ public class DatabaseConnectionTest {
 		Twoot added = conn.add("2", "cv", "2content");
 		conn.delete(added);
 		assertTrue(conn.get("2").isEmpty());
+	}
+	
+	@Test
+	void successUpdateTwoot() {
+		DatabaseTwootRepository conn = new DatabaseTwootRepository();
+		var before = conn.get("1").get().getContent();
+		conn.update("1", "updated content");
+		var after = conn.get("1").get().getContent();
+		assertFalse(before.equals(after));
 	}
 	
 	@Test

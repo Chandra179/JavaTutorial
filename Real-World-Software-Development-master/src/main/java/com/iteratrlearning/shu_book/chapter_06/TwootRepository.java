@@ -13,10 +13,13 @@ public interface TwootRepository {
 
     void delete(Twoot twoot);
 
+	void update(String id, String content);
+	
     void query(TwootQuery twootQuery, Consumer<Twoot> callback);
 
     void clear();
 
 	ResultSet getAllTwoot();
+
 }
 // end::TwootRepository[]

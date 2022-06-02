@@ -20,7 +20,6 @@ public class TwootQuery {
 
     public TwootQuery inUsers(final Set<String> inUsers) {
         this.inUsers = inUsers;
-
         return this;
     }
 

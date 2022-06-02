@@ -2,6 +2,7 @@ package com.iteratrlearning.shu_book.chapter_06.in_memory;
 
 import com.iteratrlearning.shu_book.chapter_06.*;
 
+import java.sql.ResultSet;
 import java.util.*;
 import java.util.function.Consumer;
 
@@ -74,4 +75,10 @@ public class InMemoryTwootRepository implements TwootRepository {
     public void clear() {
         twoots.clear();
     }
+
+	@Override
+	public ResultSet getAllTwoot() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
