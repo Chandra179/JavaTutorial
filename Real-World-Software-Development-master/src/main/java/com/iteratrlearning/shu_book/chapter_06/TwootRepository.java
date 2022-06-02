@@ -1,7 +1,6 @@
 package com.iteratrlearning.shu_book.chapter_06;
 
 import java.sql.ResultSet;
-import java.util.ArrayList;
 import java.util.Optional;
 import java.util.function.Consumer;
 
@@ -15,7 +14,7 @@ public interface TwootRepository {
 
 	void update(String id, String content);
 	
-    void query(TwootQuery twootQuery, Consumer<Twoot> callback);
+	void query(TwootQuery twootQuery, Consumer<Twoot> callback);
 
     void clear();
 

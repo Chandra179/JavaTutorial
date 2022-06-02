@@ -1,9 +1,10 @@
 package com.iteratrlearning.shu_book.chapter_06;
 
 import java.util.Objects;
+import java.util.function.Consumer;
 
 // Value object
-public final class Twoot {
+public final class Twoot implements Consumer<Twoot> {
     private final String id;
     private final String senderId;
     private final String content;
@@ -65,4 +66,10 @@ public final class Twoot {
             ", position=" + position +
             '}';
     }
+
+	@Override
+	public void accept(Twoot t) {
+		// TODO Auto-generated method stub
+		
+	}
 }

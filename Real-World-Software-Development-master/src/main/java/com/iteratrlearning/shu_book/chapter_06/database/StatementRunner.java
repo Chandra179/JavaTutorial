@@ -1,6 +1,10 @@
 package com.iteratrlearning.shu_book.chapter_06.database;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 class StatementRunner {
     private final Connection conn;
@@ -25,30 +29,13 @@ class StatementRunner {
             withPreparedStatement.run(stmt);
             return null;
         });
-        
-        // ANONYMOUS CLASS
-//        extract(sql, new Extractor<Object>() {
-//			@Override
-//			public Object run(PreparedStatement stmt) throws SQLException {
-//			    withPreparedStatement.run(stmt);
-//			    return null;
-//			}
-//		});
     }
 
     void update(final String sql) {
         withStatement(sql, stmt -> stmt.execute());
-        
-        // ANONYMOUS CLASS
-//        withStatement(sql, new With<PreparedStatement>() {
-//			@Override
-//			public void run(PreparedStatement stmt) throws SQLException {
-//				stmt.execute();
-//			}
-//		});
     }
 
-    void query(final String sql, final With<ResultSet> withPreparedStatement) {
+	void query(final String sql, final With<ResultSet> withPreparedStatement) {
         withStatement(sql, statement -> {
             var resultSet = statement.executeQuery();
             while (resultSet.next()) {

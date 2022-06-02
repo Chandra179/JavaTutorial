@@ -81,4 +81,10 @@ public class InMemoryTwootRepository implements TwootRepository {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public void update(String id, String content) {
+		// TODO Auto-generated method stub
+		
+	}
 }

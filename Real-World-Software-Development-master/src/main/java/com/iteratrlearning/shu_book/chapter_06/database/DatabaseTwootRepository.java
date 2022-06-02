@@ -1,8 +1,5 @@
 package com.iteratrlearning.shu_book.chapter_06.database;
 
-import com.iteratrlearning.shu_book.chapter_06.*;
-
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -11,6 +8,11 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
+
+import com.iteratrlearning.shu_book.chapter_06.Position;
+import com.iteratrlearning.shu_book.chapter_06.Twoot;
+import com.iteratrlearning.shu_book.chapter_06.TwootQuery;
+import com.iteratrlearning.shu_book.chapter_06.TwootRepository;
 
 public class DatabaseTwootRepository implements TwootRepository {
     private final StatementRunner statementRunner;
@@ -35,21 +37,22 @@ public class DatabaseTwootRepository implements TwootRepository {
     }
 
     @Override
-    public void query(final TwootQuery twootQuery, final Consumer<Twoot> callback) {
-        if (!twootQuery.hasUsers()) {
+	public void query(final TwootQuery twootQuery, final Consumer<Twoot> callback) {
+
+		if (!twootQuery.hasUsers()) {
             return;
         }
 
         var lastSeenPosition = twootQuery.getLastSeenPosition();
         var inUsers = twootQuery.getInUsers();
 
-        statementRunner.query(
+		statementRunner.query(
             "SELECT * " +
                 "FROM   twoots " +
                 "WHERE  senderId IN " + usersTuple(inUsers) +
-                "AND    twoots.position > " + lastSeenPosition.getValue(), rs ->
-
-                callback.accept(extractTwoot(rs)));
+						"AND    twoots.position > " + lastSeenPosition.getValue(),
+				rs -> callback.accept(extractTwoot(rs))
+		);
     }
 
     private Twoot extractTwoot(final ResultSet rs) throws SQLException {
