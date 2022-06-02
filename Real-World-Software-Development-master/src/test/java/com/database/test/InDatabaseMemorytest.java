@@ -40,8 +40,6 @@ public class InDatabaseMemorytest {
 	@Test
 	void query() throws SQLException {
 
-		System.out.println("-----START-------");
-
 		DatabaseTwootRepository conn = new DatabaseTwootRepository();
 
 		var tes1 = conn.add("1", "asds", "content2asd");
@@ -54,8 +52,6 @@ public class InDatabaseMemorytest {
 		lol.inUsers("1", "asds", "3");
 
 		conn.query(new TwootQuery(), consumer1);
-
-		System.out.println("-----END-------");
 	}
 	
 	@Test
@@ -96,8 +92,6 @@ public class InDatabaseMemorytest {
 	void getAllDataFromDatabase() throws SQLException {
 		DatabaseTwootRepository conn = new DatabaseTwootRepository();
 		var result = conn.getAllTwoot();
-
-		System.out.println("------------");
 
 		while (result.next()) {
 			System.out.println(result.getString(1));

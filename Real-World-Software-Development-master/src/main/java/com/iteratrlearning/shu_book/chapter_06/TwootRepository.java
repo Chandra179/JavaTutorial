@@ -19,6 +19,5 @@ public interface TwootRepository {
     void clear();
 
 	ResultSet getAllTwoot();
-
 }
 // end::TwootRepository[]

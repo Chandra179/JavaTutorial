@@ -36,10 +36,11 @@ class StatementRunner {
     }
 
 	void query(final String sql, final With<ResultSet> withPreparedStatement) {
-        withStatement(sql, statement -> {
+        
+		withStatement(sql, statement -> {
             var resultSet = statement.executeQuery();
             while (resultSet.next()) {
-                withPreparedStatement.run(resultSet);
+				withPreparedStatement.run(resultSet);
             }
         });
     }
