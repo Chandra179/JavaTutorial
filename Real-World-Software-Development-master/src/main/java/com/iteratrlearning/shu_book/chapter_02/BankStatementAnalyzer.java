@@ -17,9 +17,7 @@ public class BankStatementAnalyzer {
 
 		// bankStatementParser bisa diganti --> csvParser, jsonParser, etc ..
 		final List<BankTransaction> bankTransactions = bankStatementParser.parseLinesFrom(lines);
-		System.out.println(bankTransactions);
 
-		// jika tidak dibutuhkan bisa dibuang
 		final BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);
 
 		collectSummary(bankStatementProcessor); // jika tidak dibutuhkan bisa dibuang

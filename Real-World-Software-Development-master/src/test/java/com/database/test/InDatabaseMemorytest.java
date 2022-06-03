@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;
 import java.sql.SQLException;
 import java.util.function.Consumer;
 
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
 import com.iteratrlearning.shu_book.chapter_06.Twoot;
@@ -17,7 +17,7 @@ import com.iteratrlearning.shu_book.chapter_06.database.DatabaseTwootRepository;
 public class InDatabaseMemorytest {
 
 	@Test
-	@BeforeEach
+	@AfterEach
 	void cleanDatabase() {
 		DatabaseTwootRepository conn = new DatabaseTwootRepository();
 		conn.clear();

@@ -14,6 +14,7 @@ public class BankStatementAnalyzer {
 
 		final Path path = Paths.get(RESOURCES + fileName);
 		final List<String> lines = Files.readAllLines(path);
+		System.out.println(lines);
 
 		final List<BankTransaction> bankTransactions = bankStatementParser.parseLinesFrom(lines);
 
