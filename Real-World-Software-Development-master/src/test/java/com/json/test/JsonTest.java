@@ -14,5 +14,6 @@ public class JsonTest {
 
 		NewBankStatementAnalyzer analyzer = new NewBankStatementAnalyzer();
 		analyzer.analyze("bank-data-simple.json");
+		analyzer.analyze("bank-data-simple.csv");
 	}
 }

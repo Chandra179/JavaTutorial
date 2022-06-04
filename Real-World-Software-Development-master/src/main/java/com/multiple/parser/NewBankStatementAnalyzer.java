@@ -1,6 +1,7 @@
 package com.multiple.parser;
 
 import java.io.IOException;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Month;
 import java.util.List;
@@ -12,32 +13,38 @@ public class NewBankStatementAnalyzer {
 	public void analyze(final String fileName) throws IOException, ParseException {
 
 		final String RESOURCES = "src/test/resources/";
-		final String path = Paths.get(RESOURCES + fileName).toString();
-		System.out.println(path);
+		final Path filePath = Paths.get(RESOURCES + fileName);
 
-		BankStatementReader fileReader = checkFileExtension(path);
+		BankStatementParser fileReader = parseFile(filePath);
 
-		final List<BankTransaction> bankTransactions = fileReader.readFile(path);
+		final List<BankTransaction> bankTransactions = fileReader.readFile(filePath);
 
 		final BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);
 
 		collectSummary(bankStatementProcessor);
-
 	}
 
-	public BankStatementReader checkFileExtension(final String path) {
+	public BankStatementParser parseFile(final Path filePath) {
 
-		final String fileExt = "json";
-		BankStatementReader fileReader = null;
+		String ext = getFileExtension(filePath);
 
-		switch (fileExt) {
+		switch (ext) {
 		case "json":
-			fileReader = new BankStatementReaderJSON();
+			return new BankStatementReaderJSON();
+		case "csv":
+			return new BankStatementReaderCSV();
 		default:
-			System.out.println("default");
+			return new BankStatementReaderJSON();
 		}
+	}
 
-		return fileReader;
+	public String getFileExtension(final Path path) {
+		String filPath = path.toString();
+		int lastIndexOf = filPath.lastIndexOf(".");
+		if (lastIndexOf == -1) {
+			return ""; // empty extension
+		}
+		return filPath.substring(lastIndexOf + 1);
 	}
 
 	private static void collectSummary(final BankStatementProcessor bankStatementProcessor) {
@@ -49,5 +56,6 @@ public class NewBankStatementAnalyzer {
 				+ bankStatementProcessor.calculateTotalInMonth(Month.FEBRUARY));
 		System.out
 				.println("The total salary received is " + bankStatementProcessor.calculateTotalForCategory("Salary"));
+		System.out.println("----------------------");
 	}
 }

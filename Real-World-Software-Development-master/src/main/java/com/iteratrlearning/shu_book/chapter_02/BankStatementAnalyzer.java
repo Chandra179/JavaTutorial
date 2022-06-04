@@ -15,25 +15,12 @@ public class BankStatementAnalyzer {
 		final Path path = Paths.get(RESOURCES + fileName);
 		final List<String> lines = Files.readAllLines(path);
 		
-		// checkFileExtension
-
 		final List<BankTransaction> bankTransactions = bankStatementParser.parseLinesFrom(lines);
 
 		final BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);
 
 		collectSummary(bankStatementProcessor);
 
-	}
-
-	public void checkFileExtension(final String fileName) {
-
-		// final string fileExt = path ....
-		// switch (path)
-		// case csv -> analyze(filename, new BankStatementReaderCSV())
-		// case json -> analyze(filename, new BankStatementReaderJSON())
-		// case xml -> analyze(filename, new BankStatementReaderXML())
-
-		// bankStatementParser can be change to --> csvParser, jsonParser, etc ..
 	}
 
 	private static void collectSummary(final BankStatementProcessor bankStatementProcessor) {

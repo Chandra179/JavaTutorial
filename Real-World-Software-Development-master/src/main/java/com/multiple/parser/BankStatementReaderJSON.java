@@ -1,11 +1,11 @@
 package com.multiple.parser;
 
-import static java.util.stream.Collectors.toList;
-
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.json.simple.JSONArray;
@@ -13,7 +13,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-public class BankStatementReaderJSON implements BankStatementReader {
+public class BankStatementReaderJSON implements BankStatementParser {
 
 	private static BankTransaction parseEmployeeObject(JSONObject data) {
 
@@ -28,15 +28,24 @@ public class BankStatementReaderJSON implements BankStatementReader {
 	}
 
 	@Override
-	public List<BankTransaction> readFile(String path) throws IOException, ParseException {
+	public List<BankTransaction> readFile(Path path) throws IOException, ParseException {
 		JSONParser jsonParser = new JSONParser();
 
-		FileReader reader = new FileReader(path);
+		FileReader reader = new FileReader(path.toString());
 		Object obj = jsonParser.parse(reader);
 
 		JSONArray transactionList = (JSONArray) obj;
 
-		return (List<BankTransaction>) transactionList.stream().map(t -> parseEmployeeObject((JSONObject) t))
-				.collect(toList());
+		List<BankTransaction> myList = new ArrayList<>();
+
+		for (Object o : transactionList) {
+			JSONObject data = (JSONObject) o;
+			myList.add(parseEmployeeObject(data));
+		}
+
+		return myList;
+
+//		return (List<BankTransaction>) transactionList.stream().map(t -> parseEmployeeObject((JSONObject) t))
+//				.collect(Collectors.toList());
 	}
 }
