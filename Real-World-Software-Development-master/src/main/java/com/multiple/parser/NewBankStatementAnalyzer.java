@@ -15,36 +15,37 @@ public class NewBankStatementAnalyzer {
 		final String RESOURCES = "src/test/resources/";
 		final Path filePath = Paths.get(RESOURCES + fileName);
 
-		BankStatementParser fileReader = parseFile(filePath);
+		String fileExtension = getFileExtension(filePath);
+		
+		BankStatementParser fileParser = parseFile(fileExtension);
 
-		final List<BankTransaction> bankTransactions = fileReader.readFile(filePath);
+		final List<BankTransaction> bankTransactions = fileParser.readFile(filePath);
 
 		final BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);
 
 		collectSummary(bankStatementProcessor);
 	}
 
-	public BankStatementParser parseFile(final Path filePath) {
-
-		String ext = getFileExtension(filePath);
-
-		switch (ext) {
-		case "json":
-			return new BankStatementReaderJSON();
-		case "csv":
-			return new BankStatementReaderCSV();
-		default:
-			return new BankStatementReaderJSON();
-		}
+	public BankStatementParser parseFile(final String extension) {
+		final BankStatementParser parser = switch (extension) {
+		case "json" -> new BankStatementReaderJSON();
+		case "csv" -> new BankStatementReaderCSV();
+		default -> throw new IllegalArgumentException("No file parser with this extension: " + extension);
+		};
+		return parser;
 	}
 
 	public String getFileExtension(final Path path) {
-		String filPath = path.toString();
-		int lastIndexOf = filPath.lastIndexOf(".");
+
+		final String filePath = path.toString();
+		final int lastIndexOf = filePath.lastIndexOf(".");
+
 		if (lastIndexOf == -1) {
-			return ""; // empty extension
+			throw new IllegalArgumentException("No file extension");
 		}
-		return filPath.substring(lastIndexOf + 1);
+
+		final String extension = filePath.substring(lastIndexOf + 1);
+		return extension;
 	}
 
 	private static void collectSummary(final BankStatementProcessor bankStatementProcessor) {

@@ -1,4 +1,4 @@
-package com.json.test;
+package com.multiple.parser.test;
 
 import java.io.IOException;
 
@@ -7,13 +7,14 @@ import org.junit.jupiter.api.Test;
 
 import com.multiple.parser.NewBankStatementAnalyzer;
 
-public class JsonTest {
+public class NewBankStatementAnalyzerTest {
 
 	@Test
-	void loadJsonFile() throws IOException, ParseException {
+	void analyzeFile() throws IOException, ParseException {
 
 		NewBankStatementAnalyzer analyzer = new NewBankStatementAnalyzer();
-		analyzer.analyze("bank-data-simple.json");
+		analyzer.analyze("bank-data-simple"); // error
 		analyzer.analyze("bank-data-simple.csv");
+		analyzer.analyze("bank-data-simple.json");
 	}
 }
