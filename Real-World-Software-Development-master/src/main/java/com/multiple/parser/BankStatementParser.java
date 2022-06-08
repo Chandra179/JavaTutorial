@@ -7,5 +7,5 @@ import java.util.List;
 import org.json.simple.parser.ParseException;
 
 public interface BankStatementParser {
-	List<BankTransaction> readFile(Path path) throws IOException, ParseException;
+	List<BankTransaction> readFile(Path filename) throws IOException, ParseException;
 }

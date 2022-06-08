@@ -11,7 +11,7 @@ import java.util.List;
 
 import org.json.simple.parser.ParseException;
 
-public class BankStatementReaderCSV implements BankStatementParser {
+public class BankStatementParserCSV implements BankStatementParser {
 	private static final DateTimeFormatter DATE_PATTERN = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
 	public BankTransaction parseFrom(final String line) {
@@ -24,8 +24,8 @@ public class BankStatementReaderCSV implements BankStatementParser {
 	}
 
 	@Override
-	public List<BankTransaction> readFile(Path path) throws IOException, ParseException {
-		final List<String> lines = Files.readAllLines(path);
+	public List<BankTransaction> readFile(Path filename) throws IOException, ParseException {
+		final List<String> lines = Files.readAllLines(filename);
 		return lines.stream().map(t -> parseFrom(t)).collect(toList());
 	}
 }

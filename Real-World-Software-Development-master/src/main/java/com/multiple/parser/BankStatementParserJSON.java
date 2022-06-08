@@ -13,7 +13,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-public class BankStatementReaderJSON implements BankStatementParser {
+public class BankStatementParserJSON implements BankStatementParser {
 
 	private static BankTransaction parseEmployeeObject(JSONObject data) {
 

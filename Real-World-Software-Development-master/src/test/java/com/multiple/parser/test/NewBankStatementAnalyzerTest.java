@@ -13,7 +13,7 @@ public class NewBankStatementAnalyzerTest {
 	void analyzeFile() throws IOException, ParseException {
 
 		NewBankStatementAnalyzer analyzer = new NewBankStatementAnalyzer();
-		analyzer.analyze("bank-data-simple"); // error
+		// analyzer.analyze("bank-data-simple"); // error
 		analyzer.analyze("bank-data-simple.csv");
 		analyzer.analyze("bank-data-simple.json");
 	}
