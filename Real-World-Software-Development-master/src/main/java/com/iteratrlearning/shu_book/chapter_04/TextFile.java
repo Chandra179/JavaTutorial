@@ -36,6 +36,7 @@ class TextFile {
 		int lineNumber;
 		for (lineNumber = start; lineNumber < lines.size(); lineNumber++) {
 			final String line = lines.get(lineNumber);
+
 			if (isEnd.test(line)) {
 				break;
 			}

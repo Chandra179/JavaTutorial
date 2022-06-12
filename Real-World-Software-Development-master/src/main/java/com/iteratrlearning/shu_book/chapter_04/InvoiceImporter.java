@@ -1,10 +1,12 @@
 package com.iteratrlearning.shu_book.chapter_04;
 
+import static com.iteratrlearning.shu_book.chapter_04.Attributes.AMOUNT;
+import static com.iteratrlearning.shu_book.chapter_04.Attributes.PATIENT;
+import static com.iteratrlearning.shu_book.chapter_04.Attributes.TYPE;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
-
-import static com.iteratrlearning.shu_book.chapter_04.Attributes.*;
 
 class InvoiceImporter implements Importer {
     private static final String NAME_PREFIX = "Dear ";
@@ -20,6 +22,7 @@ class InvoiceImporter implements Importer {
 
         final Map<String, String> attributes = textFile.getAttributes();
         attributes.put(TYPE, "INVOICE");
+
         return new Document(attributes);
     }
     // end::importFile[]

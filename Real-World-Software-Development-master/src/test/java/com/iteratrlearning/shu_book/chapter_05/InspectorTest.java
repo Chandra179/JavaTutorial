@@ -1,10 +1,10 @@
 package com.iteratrlearning.shu_book.chapter_05;
 
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
 public class InspectorTest {
 
@@ -13,6 +13,7 @@ public class InspectorTest {
 
         final Facts facts = new Facts();
         facts.setFact("jobTitle", "CEO");
+
         final ConditionalAction conditionalAction = new JobTitleCondition();
         final Inspector inspector = new Inspector(conditionalAction);
 
@@ -20,8 +21,6 @@ public class InspectorTest {
 
         assertEquals(1, diagnosisList.size());
         assertEquals(true, diagnosisList.get(0).isPositive());
-
-
     }
 
     private static class JobTitleCondition implements ConditionalAction {

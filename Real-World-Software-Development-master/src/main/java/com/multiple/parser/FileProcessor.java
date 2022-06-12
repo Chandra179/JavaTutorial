@@ -18,7 +18,7 @@ public class FileProcessor {
 	final String RESOURCES = "src/test/resources/";
 	String filename;
 
-	FileProcessor() {
+	public FileProcessor() {
 		extensionToImporter.put("csv", new BankStatementParserCSV());
 		extensionToImporter.put("json", new BankStatementParserJSON());
 	}
