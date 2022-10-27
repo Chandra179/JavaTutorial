@@ -1,0 +1,73 @@
+============================
+adapter: converts the interface of one object so that another object can understand it.
+============================
+
+- roundHole (class)
+- roundPeg (class)
+- squarePeg (class)
+
+- squarePegAdapter extends roundPeg
+  -> public squarePegAdapter(squarePeg p)
+  -> @override getRadius()
+
+- client:
+  -> squarePeg p = new squarePeg(20)
+  -> squarePegAdapter tes = new squarePegAdapter(p)
+
+
+======================================================================
+bridge: split a large class or a set of closely related 
+classes into two separate hierarchies
+======================================================================
+
+Device (interface)
+Radio implements Device
+Tv implements Device
+
+Remote(interface)
+BasicRemote implements Remote
+AdvancedRemote extend BasicRemote
+
+client:
+-> BasicRemote basicRemote = new BasicRemote(device);
+
+
+===============================================================
+composite: compose objects into tree structures and then work 
+with these structures as if they were individual objects.
+===============================================================
+
+Shape (interface)
+BaseShape implements Shape
+Dot extends BaseShape
+Circle extends BaseShape
+Rectangle extends BaseShape
+CompoundShape extends BaseShape  
+
+ImageEditor (class)
+- public void loadShapes(Shape... shapes);
+
+client:
+- ImageEditor editor = new ImageEditor();
+- editor.loadShapes(
+     new Circle(),
+     new CompoundShape(),
+     new CompoundShape()
+  );
+
+====================
+Decorator
+====================
+
+DataSource (interface)
+FileDataSource implements DataSource
+DataSourceDecorator implements DataSource
+- DataSourceDecorator(DataSource source) //constructor
+
+EncryptionDecorator extends DataSourceDecorator
+CompressionDecorator extends DataSourceDecorator
+DataSourceDecorator encoded = new CompressionDecorator(
+					 new EncryptionDecorator(
+				         new FileDataSource("out/OutputDemo.txt")
+                                )
+				      );

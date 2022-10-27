@@ -1,0 +1,60 @@
+===========================
+factory method
+===========================
+- button (interface)
+- windows implement button
+  macos implement button
+- buttonInAction(button n)
+- client: 
+  -> button tes;
+  -> tes = new windows();
+  -> buttonInAction(tes)
+
+
+===========================
+abstract factory
+===========================
+- chair (interface), table (interface), lamps (interface)
+
+- modernChair implements chair
+  oldChair implements chair
+- modernTable implements table
+  oldTable implements table
+- modernLamps implements lamps
+  oldLamps implements lamps
+
+- packageDeal (interface)
+  -> chair, table, lamps (field)
+- modernFactory implements packageDeal
+- oldFactory implements packageDeal
+
+- application(packageDeal p)
+- client:
+  -> packageDeal p;
+  -> application app;
+  -> p = modernFactory()
+  -> app = new application(p);
+
+
+===================================
+builder
+===================================
+
+car1 = Car.builder().roofTop(true).build();
+car2 = Car.builder().roofTop(false).build();
+
+
+===================================
+prototype
+===================================
+cloning object
+
+
+===================================
+singleton
+===================================
+if (instance == null) {
+   instance = new Singleton(value);
+}
+return instance;
+  
