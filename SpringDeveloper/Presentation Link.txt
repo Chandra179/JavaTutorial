@@ -1,2 +1,0 @@
-https://www.slideshare.net/Pivotal/building-layers-of-defense-for-your-application
-https://www.slideshare.net/Pivotal/a-spring-datas-guide-to-persistence
