@@ -6,6 +6,7 @@ adapter: converts the interface of one object so that another object can underst
 - roundPeg (class)
 - squarePeg (class)
 
+// convert square to round
 - squarePegAdapter extends roundPeg
   -> public squarePegAdapter(squarePeg p)
   -> @override getRadius()
@@ -29,7 +30,9 @@ BasicRemote implements Remote
 AdvancedRemote extend BasicRemote
 
 client:
--> BasicRemote basicRemote = new BasicRemote(device);
+-> Device samsung = new Tv();
+-> BasicRemote basicRemote = new BasicRemote(samsung);
+-> basicRemote.switchChannel();
 
 
 ===============================================================
@@ -56,7 +59,8 @@ client:
   );
 
 ====================
-Decorator
+Decorator: design pattern that lets you attach new behaviors to objects by
+placing these objects inside special wrapper objects that contain the behaviors.
 ====================
 
 DataSource (interface)
@@ -71,3 +75,49 @@ DataSourceDecorator encoded = new CompressionDecorator(
 				         new FileDataSource("out/OutputDemo.txt")
                                 )
 				      );
+
+========================================
+FACADE: design pattern that provides a simplified interface to a library, a framework,
+or any other complex set of classes.
+========================================
+public class VideoConversionFacade {
+    public File convertVideo(String fileName, String format) {
+        System.out.println("VideoConversionFacade: conversion started.");
+        VideoFile file = new VideoFile(fileName);
+        Codec sourceCodec = CodecFactory.extract(file);
+        Codec destinationCodec;
+        if (format.equals("mp4")) {
+            destinationCodec = new MPEG4CompressionCodec();
+        } else {
+            destinationCodec = new OggCompressionCodec();
+        }
+        VideoFile buffer = BitrateReader.read(file, sourceCodec);
+        VideoFile intermediateResult = BitrateReader.convert(buffer, destinationCodec);
+        File result = (new AudioMixer()).fix(intermediateResult);
+        System.out.println("VideoConversionFacade: conversion completed.");
+        return result;
+    }
+}
+
+public static void main(String[] args) {
+        VideoConversionFacade converter = new VideoConversionFacade();
+        File mp4Video = converter.convertVideo("youtubevideo.ogg", "mp4");
+        // ...
+    }
+
+
+==================================================================================
+FLYWEIGHT:  structural design pattern that lets you fit more objects into the
+available amount of RAM by sharing common parts of state between
+multiple objects instead of keeping all of the data in each object.
+==================================================================================
+
+
+=======================================
+PROXY: design pattern that lets you provide a substitute or placeholder for another 
+object. A proxy controls access to the original object, allowing you to perform 
+something either before or after the request gets through to the original object.
+=======================================
+
+caching class/method, so if user request multiple times, the cache method/class
+will be calles instead of the original method.
