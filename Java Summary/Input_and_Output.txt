@@ -1,0 +1,2 @@
+- In the Java API, an object from which we can read a
+  sequence of bytes is called an input stream

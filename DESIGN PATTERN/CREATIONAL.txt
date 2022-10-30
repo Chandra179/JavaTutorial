@@ -8,8 +8,8 @@ factory method
 - client: 
   -> button tes;
   -> tes = new windows();
-  -> buttonInAction(tes)
-
+  -> bes = buttonInAction(tes)
+  -> bes.push()
 
 ===========================
 abstract factory
@@ -28,12 +28,11 @@ abstract factory
 - modernFactory implements packageDeal
 - oldFactory implements packageDeal
 
-- application(packageDeal p)
 - client:
   -> packageDeal p;
   -> application app;
-  -> p = modernFactory()
-  -> app = new application(p);
+  -> p = modernFactory();
+  -> p.paint()
 
 
 ===================================
@@ -45,10 +44,14 @@ car2 = Car.builder().roofTop(false).build();
 
 
 ===================================
-prototype
+prototype: copy existing objects without making your code dependent on their classes
 ===================================
-cloning object
 
+public boolean equals(Object object2) {
+     if (!(object2 instanceof Shape)) return false;
+     Shape shape2 = (Shape) object2;
+     return shape2.x == x && shape2.y == y && Objects.equals(shape2.color, color);
+}
 
 ===================================
 singleton
