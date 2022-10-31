@@ -67,12 +67,13 @@ placing these objects inside special wrapper objects that contain the behaviors.
 ChristmasTree (interface) -> String decorate();
 ChristmasTreeImpl implements ChristmasTree ->
 - override decorate() : return "Christmas tree";
-abstract TreeDecorator implements ChristmasTree -> override decorate();
+abstract TreeDecorator implements ChristmasTree ->
+- override decorate(return tree.decorate());
 
 BubbleLights extends TreeDecorator ->
-- decorate() : return super.decorate + " with Bubble lights";
+- decorate() : return super.decorate() + " with Bubble lights";
 Tinsel extends TreeDecorator ->
-- decorate() : return super.decorate + " with Tinsel";
+- decorate() : return super.decorate() + " with Tinsel";
 
 
 
@@ -113,11 +114,11 @@ multiple objects instead of keeping all of the data in each object.
 ==================================================================================
 
 
-=======================================
+===================================================================================
 PROXY: design pattern that lets you provide a substitute or placeholder for another 
 object. A proxy controls access to the original object, allowing you to perform 
 something either before or after the request gets through to the original object.
-=======================================
+===================================================================================
 
 caching class/method, so if user request multiple times, the cache method/class
 will be calles instead of the original method.
