@@ -2,13 +2,20 @@
 Chain of responsibility: s a behavioral design pattern that lets you pass requests
 along a chain of handlers
 =====================================================
-Middleware head = first;
+public static Middleware link(Middleware first, Middleware... chain) {
+        Middleware head = first;
         for (Middleware nextInChain: chain) {
             head.next = nextInChain;
             head = nextInChain;
         }
-return first;
+        return first;
+}
 
+//Subclass implements the check method
+public boolean check(String email, String password) {
+	  ......
+        return checkNext(email, password);
+}
 protected boolean checkNext(String email, String password) {
         if (next == null) {
             return true;
@@ -30,11 +37,12 @@ public boolean logIn(String email, String password) {
 success = server.logIn(email, password);
 
 
-====================================================
-Command:  the pattern intends to encapsulate in an object all the data required for
+
+=====================================================================================
+Command: the pattern intends to encapsulate in an object all the data required for
 performing a given action (command), including what method to call, the method's
 arguments, and the object to which the method belongs.
-====================================================
+=====================================================================================
 
 TextFileOperation (interface)
 - execute();
@@ -62,3 +70,22 @@ TextFileOperationExecutor textFileOperationExecutor
     textFileOperationExecutor.executeOperation(
       new SaveTextFileOperation(new TextFile("file2.txt"))));
 
+
+
+===============================================================================
+ITERATOR: behavioral design pattern that allows sequential traversal through a
+complex data structure without exposing its internal details.
+===============================================================================
+
+public enum ChannelTypeEnum { ENGLISH, HINDI, FRENCH, ALL; }
+public class Channel
+public interface ChannelCollection {
+	public void addChannel(Channel c);
+	public void removeChannel(Channel c);
+	public ChannelIterator iterator(ChannelTypeEnum type);
+}
+public interface ChannelIterator {
+	public boolean hasNext();
+	public Channel next();
+}
+ChannelCollectionImpl implements ChannelCollection
