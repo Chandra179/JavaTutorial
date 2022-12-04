@@ -20,9 +20,9 @@ public class ResourceTest
       InputStream stream = cl.getResourceAsStream("data/about.txt");
       var about = new String(stream.readAllBytes(), StandardCharsets.UTF_8);
 
-      InputStream stream2 = cl.getResourceAsStream("/corejava/title.txt");      
-      var title = new String(stream2.readAllBytes(), StandardCharsets.UTF_8).strip();
+//      InputStream stream2 = cl.getResourceAsStream("/corejava/title.txt");
+//      var title = new String(stream2.readAllBytes(), StandardCharsets.UTF_8).strip();
 
-      JOptionPane.showMessageDialog(null, about, title, JOptionPane.INFORMATION_MESSAGE, icon);
+      JOptionPane.showMessageDialog(null, about, "test", JOptionPane.INFORMATION_MESSAGE, icon);
    }
 }
